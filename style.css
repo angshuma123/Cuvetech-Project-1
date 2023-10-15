@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.Part-1{
+    height: 60vh;
+    width: 100%;
+    background-color:  #FFCD9E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.Left{
+    margin-left: 30px;
+    padding: 25px 9px;
+    margin-top: 12px;
+}
+.Right{
+    padding-top: 25px;
+}
+.heading{
+    position: relative;
+    bottom: 33px;
+}
+.Boldline{
+    position: relative;
+    top: 12px;
+}
+.IB{
+position: relative;
+top:25px
+}
+.Button{
+    background-color: 
+    #282828;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 29px;
+    width: 119px;
+    transition: transform 0.3s;
+}
+.Button:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+.Input{
+    border-radius: 4px;
+    height: 28px;
+    width: 300px;
+    padding-left: 198px;
+    border-width: 2.5px;
+}
+.Input:hover{
+    border: 2.5px solid blue;
+}
+.Picture{
+   
+    position: relative;
+    bottom:25px;
+}
+.Picture img{
+    height: 500px;
+}
+.Small{
+    position: relative;
+    top: 50px;
+    color: white;
+}
+.Bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #282828;
+    height: 40vh;
+    color: white;
+    
+}
+ul li{
+    list-style: none;
+    padding: auto;
+    cursor: pointer;
+}
+.BottomLeft{
+    position: relative;
+    top: 30px;
+    left: 28px;
+    
+}
+.BottomRight{
+    position: relative;
+    top: 30px;
+    right: 28px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .Part-1 {
+        height: auto; 
+        flex-direction: column; 
+    }
+
+    .Left {
+        margin-left: 0; 
+        padding: 15px 10px; 
+        text-align: center; 
+    }
+
+    .Right {
+        padding: 15px 10px; 
+    }
+
+    .Button, .Input {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    .Picture {
+        position: relative;
+        bottom: 0;
+    }
+
+    .Small {
+        position: relative;
+        top: 0; 
+    }
+
+    .Bottom {
+        height: auto; 
+    }
+
+    .BottomLeft, .BottomRight {
+        position: static; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    ul li {
+        padding: 5px 0; 
+    }
+}
